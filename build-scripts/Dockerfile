@@ -1,6 +1,6 @@
 FROM michaelknightdriver/docker-nginx-brotli
 
-RUN apk update && apk add --no-cache openssl
+RUN apk add --no-cache openssl
 RUN mkdir /etc/nginx/certs
 
 RUN openssl req -x509 -nodes -days 365 \
